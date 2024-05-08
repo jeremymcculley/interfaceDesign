@@ -1,0 +1,84 @@
+/** Simple Selector **/
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0px;
+}
+header{
+  display: flex;
+  height: 125px;
+  align-items: center;
+  padding: 0px 10px;
+}
+footer{
+  text-align: center;
+}
+/** Combinators **/
+header > div{
+  width: auto;
+  height: 110px;
+  flex-grow: 1;
+}
+header > div > a > img{
+  width: auto;
+  height: 100%;
+}
+header + main > section:first-child{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+/** Contextual **/
+header menu{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  list-style: none;
+}
+header li{
+  padding: 0px 10px;
+  border-right: solid #0e0e0e;
+}
+header menu a{
+  color: #0e0e0e;
+}
+section h1{
+  font-size: 3.5em;
+  color: #f8f8f8;
+}
+/** Grouped **/
+h1,h2,h3,h4,h5,h6{
+  font-family: Arial;
+}
+p,a,li{
+  font-family: "Century Gothic", sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+/** class **/
+.masthead{
+  height: 100vh;
+  background-color: #072d67;
+  justify-content: center;
+}
+/** id **/
+#row-1 div{
+  color: #f8f8f8;
+}
+/** structural pseudo-classes **/
+header menu li:last-of-type{
+  border-right: none;
+}
+main > section + section div:nth-child(1){
+  background-color: #f4511e;
+  padding: 5%;
+}
+main > section + section div:nth-child(2){
+  background-color: #f9a825;
+  padding: 5%;
+}
+main > section + section div:nth-child(3){
+  background-color: #0cb19d;
+  padding: 5%;
+}
